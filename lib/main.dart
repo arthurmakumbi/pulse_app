@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'party.dart';
+import 'PartyForm.dart';
 
 void main() => runApp(new Home());
 
@@ -36,8 +37,30 @@ class BuildPartiesState extends State<BuildParties> {
         title: new Text('Pulse - Party List'),
       ),
       body: _buildPartyList(),
+      floatingActionButton: new FloatingActionButton(
+          onPressed: _addParty,
+          child: new Icon(Icons.add),
+      ),
     );
   }
+
+  _addParty(){
+    Navigator.of(context).push(
+      new MaterialPageRoute(
+        builder: (context) {
+           new MyForm();
+         },
+      ),
+    );
+  }
+
+//  _addParty(){
+//    //pop up dialog box
+//    final partyName = //dialogbox.text;
+//    final password = //dialogbox2.text;
+//    final private = //checkbox.value;
+//    parties.add(new Party(partyName, "The Apts", [], ))
+//  }
 
   Widget _buildPartyList() {
     return new ListView.builder(
@@ -142,41 +165,3 @@ class BuildPlaylistState extends State<BuildPlaylist> {
     );
   }
 }
-  /*Widget _buildMusicList(List<String> playlist) {
-    return new ListView.builder(
-        padding: const EdgeInsets.all(16.0),
-        itemBuilder: (context, i) {
-          if (i.isOdd) return new Divider();
-
-          final index = i ~/ 2;
-
-          return _buildMusicRow(playlist[index]);
-        },
-        itemCount: 2*playlist.length
-    );
-  }
-  Widget _buildMusicRow(String music) {
-    final alreadySaved = _saved.contains(music);
-    return new ListTile(
-      title: new Text(
-        music,
-        style: _biggerFont,
-      ),
-      trailing: new Icon(
-        alreadySaved ? Icons.favorite : Icons.favorite_border,
-        color: alreadySaved ? Colors.red : null,
-      ),
-      onTap: () {
-        setState(
-              () {
-            if (alreadySaved) {
-              _saved.remove(music);
-            } else {
-              _saved.add(music);
-            }
-          },
-        );
-      },
-    );
-  }
-}*/
