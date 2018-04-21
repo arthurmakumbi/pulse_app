@@ -47,11 +47,16 @@ class BuildPartiesState extends State<BuildParties> {
     );
   }
 
-  _addParty(){
+  void _addParty(){
     Navigator.of(context).push(
       new MaterialPageRoute(
         builder: (context) {
-           new MyForm();
+           return new Scaffold(
+               appBar: new AppBar(
+               title: new Text('Create a New Party'),
+              ),
+            body: new MyForm(),
+           );
          },
       ),
     );

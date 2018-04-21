@@ -1,5 +1,25 @@
 import 'package:flutter/material.dart';
 
+void main() => runApp(new MyApp());
+
+class MyApp extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    final appTitle = 'Create a Party Playlist';
+
+    return new MaterialApp(
+      title: appTitle,
+      home: new Scaffold(
+        appBar: new AppBar(
+          title: new Text(appTitle),
+        ),
+        body: new MyForm(),
+      ),
+    );
+  }
+}
+
+// Create a Form Widget
 class MyForm extends StatefulWidget {
   @override
   MyFormState MFS;
@@ -36,41 +56,31 @@ class MyFormState extends State<MyForm> {
     return new Form(
       key: _formKey,
       child: new Column(
-        //crossAxisAlignment: CrossAxisAlignment.start,
+        crossAxisAlignment: CrossAxisAlignment.start,
         children: <Widget>[
           new Divider(),
-          new ListTile(
-            leading: const Icon(Icons.email),
-            title: new TextFormField(
-              decoration: new InputDecoration(
-                hintText: "Party Name",
-              ),
-              validator: (value) {
-                if (value.isEmpty) {
-                  return 'Please enter some text';
-                }
-                else {
-                  this.partyName = value;
-                }
-              },
-            ),
+          new Text("Enter a Party Name:", style:TextStyle(fontSize: 18.0)),
+          new TextFormField(
+            validator: (value) {
+              if (value.isEmpty) {
+                return 'Please enter some text';
+              }
+              else {
+                this.partyName = value;
+              }
+            },
           ),
           new Divider(),
-          new ListTile(
-            leading: const Icon(Icons.email),
-            title: new TextFormField(
-              decoration: new InputDecoration(
-                hintText: "Password",
-              ),
-              validator: (value) {
-                if (value.isEmpty) {
-                  return 'Please enter some text';
-                }
-                else {
-                  this.partyName = value;
-                }
-              },
-            ),
+          new Text("Enter a Password:", style:TextStyle(fontSize: 18.0)),
+          new TextFormField(
+            validator: (value) {
+              if (value.isEmpty) {
+                return 'Please enter some text';
+              }
+              else {
+                this.password = value;
+              }
+            },
           ),
           new Divider(),
           new Padding(
