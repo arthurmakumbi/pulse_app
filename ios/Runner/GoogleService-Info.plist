@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>AD_UNIT_ID_FOR_BANNER_TEST</key>
+	<string>ca-app-pub-3940256099942544/2934735716</string>
+	<key>AD_UNIT_ID_FOR_INTERSTITIAL_TEST</key>
+	<string>ca-app-pub-3940256099942544/4411468910</string>
+	<key>CLIENT_ID</key>
+	<string>892459207808-107q4ug49mj2fqam1m7969puu8h02vo8.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.892459207808-107q4ug49mj2fqam1m7969puu8h02vo8</string>
+	<key>API_KEY</key>
+	<string>AIzaSyAQ6vloMPZY99W79gPSE_RYH0zCIZn1Ue4</string>
+	<key>GCM_SENDER_ID</key>
+	<string>892459207808</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>edu.colby.pulseApp</string>
+	<key>PROJECT_ID</key>
+	<string>pulse-428e7</string>
+	<key>STORAGE_BUCKET</key>
+	<string>pulse-428e7.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<true></true>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<false></false>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:892459207808:ios:9b40a0180696ee40</string>
+	<key>DATABASE_URL</key>
+	<string>https://pulse-428e7.firebaseio.com</string>
+</dict>
+</plist>

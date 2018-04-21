@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "892459207808",
+    "firebase_url": "https://pulse-428e7.firebaseio.com",
+    "project_id": "pulse-428e7",
+    "storage_bucket": "pulse-428e7.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:892459207808:android:9b40a0180696ee40",
+        "android_client_info": {
+          "package_name": "edu.colby.pulseApp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "892459207808-frjibtjqagilemp26u57egfpiqnrs8u1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA6mnXd23uv68SIZi36U-ZGNfvB_Mka1Do"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
