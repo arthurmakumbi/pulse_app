@@ -17,7 +17,7 @@
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
-	<string>edu.colby.pulseApp</string>
+	<string>edu.colby.pulse_App</string>
 	<key>PROJECT_ID</key>
 	<string>pulse-428e7</string>
 	<key>STORAGE_BUCKET</key>
